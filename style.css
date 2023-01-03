@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-size: 100%;
+  background: linear-gradient(
+    68.15deg,
+    rgb(18, 131, 116) 16.62%,
+    #035788 85.61%
+  );
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 14px 0;
+}
+.cabecalho-imgLogoKtech {
+  border-radius: 50%;
+  width: 5%;
+}
+.cabecalho-menu {
+  display: flex;
+  gap: 32px;
+}
+.cabecalho-menu-item {
+  font-family: "Sarala", sans-serif;
+  color: #f5f6f2;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 5px;
+}
+.cabecalho-menu-item:hover {
+  background-color: #d9d9d9;
+  border-radius: 40%;
+}
+
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 0.4px solid #d9d9d9;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.conteudo-principal-escrito-titulo {
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 44px;
+  color: #f5f6f2;
+}
+.conteudo-principal-escrito-subtitulo {
+  font-family: "Sarala", sans-serif;
+  color: #f5f6f2;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  width: 70%;
+  border-bottom: 0.4px solid #d9d9d9;
+
+}
+.conteudo-principal-escrito-imagem {
+  height: 430px;
+  margin: 12px 0;
+  border-radius: 50%;
+}
+
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.conteudo-secundario-titulo {
+  padding: 35px 0 0;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 34px;
+  color: #f5f6f2;
+}
+.conteudo-secundario-titulo-paragrafo {
+  font-family: "Sarala", sans-serif;
+  color: #ecd6c4;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+}
+.rodape {
+  padding: 32px;
+  border-top: 0.4px solid #d9d9d9;
+}
+.rodape-image {
+  width: 5%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.ddlExplicacao{
+  display: none;
+  font-family: "Sarala", sans-serif;
+  color: #f5f6f2;
+  font-style: italic;
+  text-align: center;
+  width: 70%;
+}
+.iconSeta{
+  width: 2%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .cabecalho-menu {
+    margin: 0 26px;
+    gap: 60px;
+  }
+  .cabecalho-imgLogoKtech {
+    width: 15%;
+  }
+  .iconWhatsApp {
+    content: url(image/whatsapp.svg);
+    width: 10%;
+  }
+  .iconInstagram {
+    content: url(image/instagram.svg);
+    width: 10%;
+  }
+  .iconGitHub {
+    content: url(image/github.svg);
+    width: 10%;
+  }
+  .iconLinkedin {
+    content: url(image/linkedin.svg);
+    width: 10%;
+  }
+  .conteudo-principal-escrito-titulo {
+    font-size: 22px;
+    text-shadow: #000000;
+    margin-top: 22px;
+  }
+  .conteudo-secundario-titulo-paragrafo {
+    text-align: -webkit-center;
+  }
+  .rodape-image {
+    width: 22%;
+  }
+  .conteudo-principal-escrito-subtitulo {
+    font-size: 16px;
+  }
+  .conteudo-principal-escrito-imagem,
+  .cabecalho-menu a:nth-child(1) {
+    display: none;
+  }
+  .iconSeta{width: 6%;}
+}
